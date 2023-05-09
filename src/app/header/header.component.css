@@ -1,0 +1,27 @@
+a{
+  color:white;
+  font-size:2vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:hover{
+  color: var(--color3);
+}
+
+a:focus{
+  color: var(--color2) !important;
+}
+
+
+hr{
+  background-color: aliceblue;
+  width: 95%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+i{
+  height: 3px;
+}

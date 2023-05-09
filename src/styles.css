@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --color1:#D14D72;
+  --color2:#FFABAB;
+  --color3:#FCC8D1;
+  --color4:#FEF2F4;
+}
+
+body{
+  height: 100%;
+}
