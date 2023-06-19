@@ -8,6 +8,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { GlucoseRecordListStartComponent } from './glucose/glucose-record-list-start/glucose-record-list-start.component';
 import { GlucoseRecordListComponent } from './glucose/glucose-record-list/glucose-record-list.component';
 import { GlucoseModalComponent } from './glucose/glucose-modal/glucose-modal.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch:'full'},
@@ -17,6 +18,7 @@ const routes: Routes = [
     {path:':date/:id', component:GlucoseRecordListComponent, children:[
       {path:'edit', component: GlucoseModalComponent}]}
   ]},
+  {path: 'login', component: LoginComponent},
   {path: 'food', component: FoodComponent},
   {path: 'about', component: AboutComponent},
   {path: 'home', component: HomeComponent},

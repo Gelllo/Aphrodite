@@ -4,13 +4,13 @@ import { FormArray, FormControl, FormGroup, ReactiveFormsModule, Validators } fr
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Glucose } from '../glucose';
 import { GlucoseService } from '../glucose.service';
-import { ModalDismissReasons, NgbDatepickerModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+//import { ModalDismissReasons, NgbDatepickerModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-glucose-modal',
   templateUrl: './glucose-modal.component.html',
   standalone: true,
-  imports: [NgbDatepickerModule, ReactiveFormsModule],
+  //imports: [NgbDatepickerModule, ReactiveFormsModule],
   styleUrls: ['./glucose-modal.component.css'],
 })
 export class GlucoseModalComponent implements AfterViewInit{
@@ -21,8 +21,8 @@ export class GlucoseModalComponent implements AfterViewInit{
   constructor(
      private glucoseService: GlucoseService,
        private route: ActivatedRoute,
-        private router: Router,
-        private modalService: NgbModal) {
+        private router: Router
+) {
 }
   ngAfterViewInit(): void {
     console.log(this.modalRef);
@@ -30,25 +30,26 @@ export class GlucoseModalComponent implements AfterViewInit{
   }
 
 	open() {
-    console.log(this.modalRef);
-		this.modalService.open(this.modalRef, { ariaLabelledBy: 'modal-basic-title' }).result.then(
-			(result) => {
-				this.closeResult = `Closed with: ${result}`;
-			},
-			(reason) => {
-				this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-			},
-		);
+    // console.log(this.modalRef);
+		// this.modalService.open(this.modalRef, { ariaLabelledBy: 'modal-basic-title' }).result.then(
+		// 	(result) => {
+		// 		this.closeResult = `Closed with: ${result}`;
+		// 	},
+		// 	(reason) => {
+		// 		this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+		// 	},
+		// );
 	}
 
 	private getDismissReason(reason: any): string {
-		if (reason === ModalDismissReasons.ESC) {
-			return 'by pressing ESC';
-		} else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-			return 'by clicking on a backdrop';
-		} else {
-			return `with: ${reason}`;
-		}
+		// if (reason === ModalDismissReasons.ESC) {
+		// 	return 'by pressing ESC';
+		// } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+		// 	return 'by clicking on a backdrop';
+		// } else {
+		// 	return `with: ${reason}`;
+		// }
+    return "";
 	}
 
   glucoseForm:FormGroup;

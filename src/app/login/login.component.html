@@ -1,0 +1,39 @@
+<div>
+  <mat-card>
+    <mat-card-header>
+      <h2>Log In</h2>
+    </mat-card-header>
+    <mat-card-content>
+      <form #loginForm="ngForm" (ngSubmit)="internalLogin()">
+        <mat-error *ngIf="!loginValid">
+          The username and password were not recognized
+        </mat-error>
+        <div class="d-flex flex-column">
+          <mat-form-field>
+            <input matInput placeholder="Email" [(ngModel)]="username" name="username" required>
+            <mat-error>
+              Please provide a valid email address
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+            <mat-error>
+              Please provide a valid password
+            </mat-error>
+          </mat-form-field>
+          <button mat-raised-button color="primary" [disabled]="!loginForm.form.valid">Login</button>
+        </div>
+      </form>
+    </mat-card-content>
+    <hr>
+    <mat-card-footer>
+      <button class="btn btn-facebook btn-primary" (click)="facebookLogin()"><i class="bi bi-facebook"></i> Facebook</button>
+      <button class="btn btn-facebook btn-secondary"><i class="bi bi-google"></i> Google</button>
+      <div id="buttonDiv"></div>
+    </mat-card-footer>
+  </mat-card>
+</div>
+
+
+
+
