@@ -1,0 +1,16 @@
+/* h1{
+  color: whitesmoke;
+} */
+
+::-webkit-scrollbar
+{
+	width: 15px;
+  height:8px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 12px;
+	background-color:grey;
+}

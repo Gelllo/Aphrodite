@@ -1,0 +1,142 @@
+Date : 2023-07-02 17:06:12
+Directory : c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src
+Total : 76 files,  1196 codes, 9 comments, 237 blanks, all 1442 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| TypeScript |         43 |        876 |          9 |        192 |      1,077 |
+| HTML       |         14 |        258 |          0 |         24 |        282 |
+| PostCSS    |         19 |         62 |          0 |         21 |         83 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                                                  | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                                     |         76 |      1,196 |          9 |        237 |      1,442 |
+| . (Files)                                                                                                                                             |          1 |          7 |          0 |          2 |          9 |
+| app                                                                                                                                                   |         75 |      1,189 |          9 |        235 |      1,433 |
+| app (Files)                                                                                                                                           |          3 |         29 |          0 |          0 |         29 |
+| app\logged-in                                                                                                                                         |         48 |        780 |          9 |        145 |        934 |
+| app\logged-in (Files)                                                                                                                                 |          1 |          2 |          0 |          0 |          2 |
+| app\logged-in\Medic                                                                                                                                   |          9 |         44 |          0 |          6 |         50 |
+| app\logged-in\Medic\my-patients                                                                                                                       |          5 |        118 |          0 |         22 |        140 |
+| app\logged-in\Medic\my-patients (Files)                                                                                                               |          1 |          4 |          0 |          1 |          5 |
+| app\logged-in\Medic\my-patients\patient                                                                                                               |          4 |        114 |          0 |         21 |        135 |
+| app\logged-in\Medic\patient                                                                                                                           |          4 |        -74 |          0 |        -16 |        -90 |
+| app\logged-in\User                                                                                                                                    |         32 |        624 |          9 |        125 |        758 |
+| app\logged-in\User\mails                                                                                                                              |         28 |        491 |          3 |        102 |        596 |
+| app\logged-in\User\mails (Files)                                                                                                                      |          8 |         74 |          0 |         19 |         93 |
+| app\logged-in\User\mails\mail-list                                                                                                                    |         20 |        417 |          3 |         83 |        503 |
+| app\logged-in\User\mails\mail-list (Files)                                                                                                            |          4 |        150 |          0 |         31 |        181 |
+| app\logged-in\User\mails\mail-list\mail                                                                                                               |         16 |        267 |          3 |         52 |        322 |
+| app\logged-in\User\mails\mail-list\mail (Files)                                                                                                       |          4 |         85 |          3 |         16 |        104 |
+| app\logged-in\User\mails\mail-list\mail\mail-create-dialog                                                                                            |          4 |         68 |          0 |         12 |         80 |
+| app\logged-in\User\mails\mail-list\mail\mail-delete-dialog                                                                                            |          4 |         46 |          0 |         12 |         58 |
+| app\logged-in\User\mails\mail-list\mail\mail-update-dialog                                                                                            |          4 |         68 |          0 |         12 |         80 |
+| app\logged-in\User\reports                                                                                                                            |          4 |        133 |          6 |         23 |        162 |
+| app\logged-in\header                                                                                                                                  |          2 |          5 |          0 |         -1 |          4 |
+| app\logged-in\report-notifications                                                                                                                    |          4 |        105 |          0 |         15 |        120 |
+| app\presentation                                                                                                                                      |         14 |        240 |          0 |         46 |        286 |
+| app\presentation (Files)                                                                                                                              |          1 |          8 |          0 |          1 |          9 |
+| app\presentation\login                                                                                                                                |          6 |        104 |          0 |         23 |        127 |
+| app\presentation\login (Files)                                                                                                                        |          2 |         56 |          0 |         10 |         66 |
+| app\presentation\login\forgot-password-dialog                                                                                                         |          4 |         48 |          0 |         13 |         61 |
+| app\presentation\presentation-choices                                                                                                                 |          1 |          9 |          0 |          2 |         11 |
+| app\presentation\presentation-content                                                                                                                 |          2 |         14 |          0 |          2 |         16 |
+| app\presentation\reset-password                                                                                                                       |          4 |        105 |          0 |         18 |        123 |
+| app\services                                                                                                                                          |          8 |        114 |          0 |         33 |        147 |
+| app\services (Files)                                                                                                                                  |          1 |          8 |          0 |          2 |         10 |
+| app\services\Food                                                                                                                                     |          1 |          4 |          0 |          1 |          5 |
+| app\services\Glucose                                                                                                                                  |          1 |         -3 |          0 |         -4 |         -7 |
+| app\services\Mails                                                                                                                                    |          2 |         68 |          0 |         22 |         90 |
+| app\services\Reports                                                                                                                                  |          2 |         33 |          0 |         11 |         44 |
+| app\services\Users                                                                                                                                    |          1 |          4 |          0 |          1 |          5 |
+| app\shared                                                                                                                                            |          2 |         26 |          0 |         11 |         37 |
+| app\shared\Date                                                                                                                                       |          2 |         26 |          0 |         11 |         37 |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                                              | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\app-routing.module.ts                                                                       | TypeScript |          8 |          0 |          0 |          8 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\app.component.css                                                                           | PostCSS    |          1 |          0 |          0 |          1 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\app.module.ts                                                                               | TypeScript |         20 |          0 |          0 |         20 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\Medic\my-patients\my-patients.component.ts                                        | TypeScript |          4 |          0 |          1 |          5 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\Medic\my-patients\patient\patient.component.css                                   | PostCSS    |         29 |          0 |          5 |         34 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\Medic\my-patients\patient\patient.component.html                                  | HTML       |         19 |          0 |          1 |         20 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\Medic\my-patients\patient\patient.component.spec.ts                               | TypeScript |         18 |          0 |          6 |         24 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\Medic\my-patients\patient\patient.component.ts                                    | TypeScript |         48 |          0 |          9 |         57 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\Medic\patient\patient.component.css                                               | PostCSS    |        -29 |          0 |         -5 |        -34 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\Medic\patient\patient.component.html                                              | HTML       |        -16 |          0 |         -1 |        -17 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\Medic\patient\patient.component.spec.ts                                           | TypeScript |        -18 |          0 |         -6 |        -24 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\Medic\patient\patient.component.ts                                                | TypeScript |        -11 |          0 |         -4 |        -15 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail-list.component.css                                      | PostCSS    |          0 |          0 |          1 |          1 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail-list.component.html                                     | HTML       |         28 |          0 |          4 |         32 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail-list.component.spec.ts                                  | TypeScript |         18 |          0 |          6 |         24 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail-list.component.ts                                       | TypeScript |        104 |          0 |         20 |        124 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail-create-dialog\mail-create-dialog.component.css     | PostCSS    |          0 |          0 |          1 |          1 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail-create-dialog\mail-create-dialog.component.html    | HTML       |         29 |          0 |          1 |         30 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail-create-dialog\mail-create-dialog.component.spec.ts | TypeScript |         18 |          0 |          6 |         24 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail-create-dialog\mail-create-dialog.component.ts      | TypeScript |         21 |          0 |          4 |         25 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail-delete-dialog\mail-delete-dialog.component.css     | PostCSS    |          0 |          0 |          1 |          1 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail-delete-dialog\mail-delete-dialog.component.html    | HTML       |          9 |          0 |          1 |         10 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail-delete-dialog\mail-delete-dialog.component.spec.ts | TypeScript |         18 |          0 |          6 |         24 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail-delete-dialog\mail-delete-dialog.component.ts      | TypeScript |         19 |          0 |          4 |         23 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail-update-dialog\mail-update-dialog.component.css     | PostCSS    |          0 |          0 |          1 |          1 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail-update-dialog\mail-update-dialog.component.html    | HTML       |         29 |          0 |          1 |         30 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail-update-dialog\mail-update-dialog.component.spec.ts | TypeScript |         18 |          0 |          6 |         24 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail-update-dialog\mail-update-dialog.component.ts      | TypeScript |         21 |          0 |          4 |         25 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail.component.css                                      | PostCSS    |          0 |          0 |          1 |          1 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail.component.html                                     | HTML       |         28 |          0 |          2 |         30 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail.component.spec.ts                                  | TypeScript |         18 |          0 |          6 |         24 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-list\mail\mail.component.ts                                       | TypeScript |         39 |          3 |          7 |         49 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-request.spec.ts                                                   | TypeScript |          6 |          0 |          2 |          8 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-request.ts                                                        | TypeScript |         16 |          0 |          2 |         18 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-template-dto.spec.ts                                              | TypeScript |          6 |          0 |          2 |          8 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mail-template-dto.ts                                                   | TypeScript |         17 |          0 |          2 |         19 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mails.component.css                                                    | PostCSS    |          0 |          0 |          1 |          1 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mails.component.html                                                   | HTML       |          3 |          0 |          1 |          4 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mails.component.spec.ts                                                | TypeScript |         18 |          0 |          6 |         24 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\mails\mails.component.ts                                                     | TypeScript |          8 |          0 |          3 |         11 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\reports\reports.component.css                                                | PostCSS    |          4 |          0 |          1 |          5 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\reports\reports.component.html                                               | HTML       |         43 |          0 |          6 |         49 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\reports\reports.component.spec.ts                                            | TypeScript |         18 |          0 |          6 |         24 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\reports\reports.component.ts                                                 | TypeScript |         68 |          6 |         10 |         84 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\header\header.component.css                                                       | PostCSS    |          3 |          0 |         -1 |          2 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\header\header.component.html                                                      | HTML       |          2 |          0 |          0 |          2 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\logged-in.component.ts                                                            | TypeScript |          2 |          0 |          0 |          2 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\report-notifications\report-notifications.component.css                           | PostCSS    |          0 |          0 |          1 |          1 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\report-notifications\report-notifications.component.html                          | HTML       |         22 |          0 |          1 |         23 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\report-notifications\report-notifications.component.spec.ts                       | TypeScript |         18 |          0 |          6 |         24 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\report-notifications\report-notifications.component.ts                            | TypeScript |         65 |          0 |          7 |         72 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\login\forgot-password-dialog\forgot-password-dialog.component.css              | PostCSS    |          0 |          0 |          1 |          1 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\login\forgot-password-dialog\forgot-password-dialog.component.html             | HTML       |         12 |          0 |          2 |         14 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\login\forgot-password-dialog\forgot-password-dialog.component.spec.ts          | TypeScript |         18 |          0 |          6 |         24 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\login\forgot-password-dialog\forgot-password-dialog.component.ts               | TypeScript |         18 |          0 |          4 |         22 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\login\login.component.css                                                      | PostCSS    |         20 |          0 |          5 |         25 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\login\login.component.ts                                                       | TypeScript |         36 |          0 |          5 |         41 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\presentation-choices\presentation-choices.component.css                        | PostCSS    |          9 |          0 |          2 |         11 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\presentation-content\presentation-content.component.css                        | PostCSS    |         10 |          0 |          2 |         12 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\presentation-content\presentation-content.component.html                       | HTML       |          4 |          0 |          0 |          4 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\presentation.component.css                                                     | PostCSS    |          8 |          0 |          1 |          9 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\reset-password\reset-password.component.css                                    | PostCSS    |          0 |          0 |          1 |          1 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\reset-password\reset-password.component.html                                   | HTML       |         46 |          0 |          5 |         51 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\reset-password\reset-password.component.spec.ts                                | TypeScript |         18 |          0 |          6 |         24 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\presentation\reset-password\reset-password.component.ts                                     | TypeScript |         41 |          0 |          6 |         47 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\services\Food\food.service.ts                                                               | TypeScript |          4 |          0 |          1 |          5 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\services\Glucose\glucose.service.ts                                                         | TypeScript |         -3 |          0 |         -4 |         -7 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\services\Mails\mail.service.spec.ts                                                         | TypeScript |         12 |          0 |          5 |         17 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\services\Mails\mail.service.ts                                                              | TypeScript |         56 |          0 |         17 |         73 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\services\Reports\reports.service.spec.ts                                                    | TypeScript |         12 |          0 |          5 |         17 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\services\Reports\reports.service.ts                                                         | TypeScript |         21 |          0 |          6 |         27 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\services\Users\users.service.ts                                                             | TypeScript |          4 |          0 |          1 |          5 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\services\auth.service.ts                                                                    | TypeScript |          8 |          0 |          2 |         10 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\shared\Date\date.service.spec.ts                                                            | TypeScript |         12 |          0 |          5 |         17 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\shared\Date\date.service.ts                                                                 | TypeScript |         14 |          0 |          6 |         20 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\styles.css                                                                                      | PostCSS    |          7 |          0 |          2 |          9 |
+| Total                                                                                                                                                 |            |      1,196 |          9 |        237 |      1,442 |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

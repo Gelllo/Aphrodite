@@ -1,0 +1,31 @@
+
+<div class="d-flex flex-column">
+  <div class="d-flex w-100 p-3">
+    <div class="d-flex align-items-center">
+      <button mat-raised-button color="primary" (click)="AddMailTemplate()" style="white-space: nowrap;">Add template</button>
+    </div>
+    <div class="d-flex justify-content-around w-100">
+      <div *ngFor="let template of mailTemplates; let i = index" (click)="ChangeTargetTemplate(i)">
+        <mat-card style="min-width: 230px;">
+          <mat-card-header>
+            <mat-card-title>{{template.name}}</mat-card-title>
+            <mat-card-subtitle>To {{template.targetEmail}}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-divider></mat-divider>
+          <mat-card-actions>
+            <button mat-raised-button color="primary" class="m-auto" (click)="UpdateMailTemplate(i)">UPDATE</button>
+            <button mat-raised-button color="warn" class="m-auto" (click)="DeleteMailTemplate(i)">DELETE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div *ngIf="isInitialized">
+    <div class="flex flex-grow-1">
+      <app-mail [template]="targetTemplate" [index]="targetIndex"></app-mail>
+    </div>
+  </div>
+</div>

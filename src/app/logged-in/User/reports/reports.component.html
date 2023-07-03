@@ -1,0 +1,48 @@
+<div class="d-flex w-100 h-100 justify-content-center align-items-center">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Generate Reports for glucose and meals</mat-card-title>
+      <mat-card-subtitle>Click the buttons below to generate them</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="h-100">
+      <mat-divider></mat-divider>
+
+      <div class="d-flex h-100 justify-content-center align-items-center">
+        <div class="d-flex flex-column">
+          <h3>Specify a date, the reports will be generated from that date until today</h3>
+          <mat-form-field class="example-full-width mt-5">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker" [(ngModel)]="fromTargetDate">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+
+      </div>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+
+    <mat-card-actions>
+      <div class="d-flex w-100 h-100 justify-content-around">
+        <button mat-button (click)="GenerateGlucoseReport()">
+          <div *ngIf="!glucoseLoading; else displayGlucoseLoading">Generate Glucose Report</div>
+          <ng-template #displayGlucoseLoading>
+            <mat-spinner color="primary" [diameter]="30"></mat-spinner>
+          </ng-template>
+        </button>
+        <button mat-button (click)="GenerateFoodReport()">
+          <div *ngIf="!foodLoading; else displayFoodLoading">Generate Meals Report</div>
+          <ng-template #displayFoodLoading>
+            <mat-spinner color="primary" [diameter]="30"></mat-spinner>
+          </ng-template>
+        </button>
+      </div>
+
+    </mat-card-actions>
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
+
+</div>

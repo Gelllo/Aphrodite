@@ -1,0 +1,18 @@
+.mat-icon{
+  box-sizing: content-box !important;
+}
+
+.mat-icon:hover{
+  cursor: pointer;
+}
+
+img{
+  border-radius:50%;
+}
+
+.wrapper{
+  border: 1px sold lightgrey;
+  border-radius:15px;
+}
+
+

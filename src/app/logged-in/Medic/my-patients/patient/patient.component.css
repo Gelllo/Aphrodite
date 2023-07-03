@@ -1,0 +1,33 @@
+i{
+  transform:scale(2.5);
+}
+
+.background-color{
+  background: linear-gradient(108deg, #ADD8E6, #bf64a5,#FFC0CB);
+  background-size: 180% 180%;
+  animation: gradient-animation 4s ease infinite;
+  border-radius:25px;
+  width:50px;
+  height:50px;
+}
+
+.example-card {
+  max-width: 400px;
+  margin:15px;
+}
+
+:host{
+  display:flex;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

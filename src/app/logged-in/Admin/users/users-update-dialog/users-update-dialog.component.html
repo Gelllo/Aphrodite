@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>Hi {{adminName}}</h1>
+<div mat-dialog-content>
+  <p>Update {{data.userID}}</p>
+  <div class="d-flex flex-column">
+    <mat-form-field>
+      <mat-label>First Name</mat-label>
+      <input matInput [(ngModel)]="data.firstName">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>LastName</mat-label>
+      <input matInput [(ngModel)]="data.lastName">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput [(ngModel)]="data.email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Role</mat-label>
+      <mat-select [(ngModel)]="data.role">
+        <mat-option value="ADMIN">ADMIN</mat-option>
+        <mat-option value="MEDIC">MEDIC</mat-option>
+        <mat-option value="USER">USER</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Update</button>
+</div>

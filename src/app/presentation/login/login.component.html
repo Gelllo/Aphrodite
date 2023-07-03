@@ -1,0 +1,73 @@
+<div class="d-flex w-100 h-100">
+  <div class="login-card-container">
+    <div class="login-wrapper">
+      <mat-card class="p-3 h-100">
+        <mat-card-header class="m-3">
+          <h2 class="m-auto" style="font-weight: 700;">Login</h2>
+        </mat-card-header>
+        <mat-card-content>
+          <form [formGroup]="loginForm" (ngSubmit)="internalLogin()">
+            <mat-error *ngIf="!loginValid">
+              The username and password were not recognized
+            </mat-error>
+            <div class="d-flex flex-column">
+              <mat-form-field>
+                <mat-label>Username</mat-label>
+                <input matInput placeholder="Username" name="username" required formControlName="username">
+                <mat-icon matPrefix><i class="bi bi-person"></i></mat-icon>
+                <mat-error>
+                  Please provide a valid username
+                </mat-error>
+              </mat-form-field>
+              <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" name="password" required formControlName="password">
+                <mat-icon matPrefix><i class="bi bi-lock"></i></mat-icon>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+                <mat-error>
+                  Please provide a valid password
+                </mat-error>
+              </mat-form-field>
+              <a class="login-card-text ms-auto" (click)="OpenForgotPasswordDialog()">Forgot password?</a>
+              <button mat-raised-button color="primary" [disabled]="!loginForm.valid" class="internal-login-button">LOGIN</button>
+            </div>
+          </form>
+        </mat-card-content>
+        <hr>
+        <mat-card-footer>
+          <p style="text-align: center;" class="login-card-text">Or login using</p>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="m-3">
+              <button class="btn btn-primary facebook-button" (click)="facebookLogin()"><i class="bi bi-facebook"></i></button>
+            </div>
+            <div class="m-3">
+              <div id="googleButton">
+
+              </div>
+            </div>
+          </div>
+        </mat-card-footer>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="d-flex flex-fill p-3 justify-content-center align-items-center img-container">
+
+    <img id="img-first" src="/assets/medic-pacient_3.jpg">
+
+  </div>
+
+</div>
+
+<mat-spinner id="login-spinner" [diameter]="150"  *ngIf="spinnerService.visibility | async">
+</mat-spinner>
+
+
+
+
+
+
+
+

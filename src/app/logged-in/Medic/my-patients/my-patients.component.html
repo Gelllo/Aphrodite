@@ -1,0 +1,15 @@
+<div class="d-flex w-100 h-100 flex-column">
+  <div class="container w-100 h-100">
+    <div class="p-3">
+      <mat-form-field class="p-3">
+        <mat-label>Enter patient email</mat-label>
+        <input matInput placeholder="patient@gmail.com" [formControl]="patientEmail">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="AddPatient()">Add Patient</button>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="p-3 d-flex justify-content-evenly flex-wrap">
+      <app-patient (deleteEvent)="deleteRecord($event)" *ngFor=" let patient of patients; let i = index" [patient]="patient" [index]="i"></app-patient>
+    </div>
+  </div>
+</div>

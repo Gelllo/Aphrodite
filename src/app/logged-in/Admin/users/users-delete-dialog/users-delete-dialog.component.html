@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Hi {{adminName}}</h1>
+<mat-divider></mat-divider>
+<div mat-dialog-content>
+  <p>Are you sure you want to delete {{data.userID}} ?</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Delete</button>
+  <button mat-button (click)="onNoClick()">No</button>
+</div>

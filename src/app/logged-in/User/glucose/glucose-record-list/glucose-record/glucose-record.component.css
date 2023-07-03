@@ -1,0 +1,24 @@
+/* p{
+  color:black;
+}
+
+div{
+  border: 3px;
+  border-style: solid;
+  margin: 10px;
+  border-radius:6px;
+  background-color: whitesmoke;
+  padding: 6px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+} */
+
+:host{
+  display: flex;
+  width:600px;
+}
+
+

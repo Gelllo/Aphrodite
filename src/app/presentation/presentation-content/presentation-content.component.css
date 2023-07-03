@@ -1,0 +1,17 @@
+img{
+  box-shadow: 10px 15px 20px #f0ecec;
+  border-radius: 55px;
+  margin: 1vw;
+}
+
+@media (max-width: 1750px) {
+  .second-img-container{
+    display:none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .first-img-container{
+    display:none;
+  }
+}

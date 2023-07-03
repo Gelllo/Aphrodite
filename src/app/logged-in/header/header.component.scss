@@ -1,0 +1,4 @@
+@use "./header.component-theme" as table;
+@import "../../shared/styles.scss";
+
+@include table.color($aphrodite-theme);

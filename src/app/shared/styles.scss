@@ -1,0 +1,17 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$aphrodite-primary: mat.define-palette(mat.$indigo-palette, 700, 300, 900);
+$aphrodite-accent: mat.define-palette(mat.$pink-palette, 300, 500, 700, 900);
+
+$aphrodite-warn: mat.define-palette(mat.$red-palette, 700);
+$aphrodite-theme: mat.define-light-theme((
+    color: (
+      primary: $aphrodite-primary,
+      accent: $aphrodite-accent,
+      warn: $aphrodite-warn,
+    )
+));
+
+@include mat.all-component-themes($aphrodite-theme);

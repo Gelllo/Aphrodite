@@ -1,0 +1,12 @@
+<div class="container">
+  <mat-divider></mat-divider>
+  <button mat-raised-button color="primary" (click)="addRecord()">Add record</button>
+  <div class="d-flex">
+    <div class="flex-grow-2">
+      <app-food-days></app-food-days>
+    </div>
+    <div class="flex flex-grow-1">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+"filename", "language", "TypeScript", "PostCSS", "HTML", "comment", "blank", "total"
+"c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-days\food-days.component.css", "PostCSS", 0, 56, 0, 0, 15, 71
+"c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-days\food-days.component.html", "HTML", 0, 0, 23, 0, 2, 25
+"c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-days\food-days.component.ts", "TypeScript", 25, 0, 0, 0, 4, 29
+"c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record-list.component.html", "HTML", 0, 0, 4, 0, 0, 4
+"c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record-list.component.ts", "TypeScript", 29, 0, 0, 0, 4, 33
+"c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record\food-record-create-dialog\food-record-create-dialog.component.html", "HTML", 0, 0, -1, 0, 2, 1
+"c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record\food-record-create-dialog\food-record-create-dialog.component.ts", "TypeScript", 8, 0, 0, 0, 2, 10
+"c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record\food-record-delete-dialog\food-record-delete-dialog.component.html", "HTML", 0, 0, 8, 0, 0, 8
+"c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record\food-record-delete-dialog\food-record-delete-dialog.component.ts", "TypeScript", 11, 0, 0, 0, 1, 12
+"c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record\food-record.component.html", "HTML", 0, 0, 108, 0, 4, 112
+"c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record\food-record.component.ts", "TypeScript", 126, 0, 0, 0, 15, 141
+"c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food.component.ts", "TypeScript", 2, 0, 0, 0, -1, 1
+"Total", "-", 201, 56, 142, 0, 48, 447

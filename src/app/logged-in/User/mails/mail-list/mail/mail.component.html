@@ -1,0 +1,29 @@
+<div class="w-100 h-100 p-3">
+  <mat-card class="w-50 h-50 m-auto">
+    <mat-card-header>
+      <mat-card-title>{{template.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <mat-list role="list">
+        <mat-list-item role="listitem"> <b>From</b> {{template.senderEmail}}</mat-list-item>
+        <mat-list-item role="listitem"> <b>To</b> {{template.targetEmail}}</mat-list-item>
+        <mat-list-item role="listitem"> <b>Subject</b> {{template.mailSubject}}</mat-list-item>
+        <mat-list-item role="listitem"> <b>Body</b> {{template.mailBody}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item role="listitem">
+            <div class="form-group">
+              <input type="file"
+                    id="file"
+                    (change)="handleFileInput($event)">
+            </div>
+
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" class="m-auto" (click)="SendMail()">Send email</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

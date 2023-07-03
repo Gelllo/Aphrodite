@@ -1,0 +1,5 @@
+<div class="m-2 w-100 h-100">
+  <div class=" d-flex align-items-center flex-column w-100 h-100">
+    <app-food-record (deleteEvent)="deleteRecord($event)" *ngFor=" let meal of mealsRecords; let i = index" [meal]="meal" [index]="i" class="m-3"></app-food-record>
+  </div>
+</div>

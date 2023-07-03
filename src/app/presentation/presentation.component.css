@@ -1,0 +1,9 @@
+.presentation-header{
+  width:100vw;
+}
+
+:host{
+  display:flex;
+  width:100vw !important;
+  height:100vh !important;
+}

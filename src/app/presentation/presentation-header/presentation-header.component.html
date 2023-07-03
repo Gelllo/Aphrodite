@@ -1,0 +1,18 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <button mat-icon-button [routerLink]="'./content'"><img src="/assets/glucose.png" class="mb-2"></button>
+    <h1>DiaBilly</h1>
+    <span class="menu-spacer"></span>
+    <div class="d-inline-flex w-100">
+      <div class="ms-3">
+        <a mat-button [routerLink]="'./about'"> About Us </a>
+      </div>
+      <div class="ms-auto">
+        <a mat-button [routerLink]="'./login'"> Login </a>
+      </div>
+      <div>
+        <a mat-button [routerLink]="'./register'"> Register</a>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

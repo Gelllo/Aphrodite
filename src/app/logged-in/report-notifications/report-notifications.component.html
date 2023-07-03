@@ -1,0 +1,22 @@
+<div class="d-flex flex-column w-100 h-100 justify-content-center align-items-center">
+  <div *ngFor="let request of mailRequests; let i = index" class="m-3 w-50">
+    <mat-card>
+      <mat-card-content>
+        <div class="d-flex w-100">
+          <mat-icon class="me-3">
+            <i class="bi bi-bell"></i>
+          </mat-icon>
+          <ng-container *ngIf=" userRole === 'MEDIC' ">
+            <p>Patient ~ <b>{{request.patientUsername}}</b> ~ sent you the <b>{{request.reportRequested}}</b> report, verify your email</p>
+            <button mat-raised-button color="primary" class="ms-auto" (click)="DeleteMailRequest(request, i)">Ok</button>
+          </ng-container>
+          <ng-container *ngIf=" userRole === 'USER' ">
+            <p>Medic ~ <b>{{request.doctorUsername}}</b> ~ requested you the <b>{{request.reportRequested}}</b> report</p>
+            <button mat-raised-button color="primary" class="ms-auto" routerLink="./mails" (click)="UpdateMailRequest(request, i)">Go to Mail</button>
+            <button mat-raised-button color="warn" class="ms-1" (click)="DeleteMailRequest(request, i)">Ignore</button>
+          </ng-container>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

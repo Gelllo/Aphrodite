@@ -1,0 +1,50 @@
+Date : 2023-06-30 12:25:50
+Directory : c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src
+Total : 12 files,  399 codes, 0 comments, 48 blanks, all 447 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| TypeScript |          6 |        201 |          0 |         25 |        226 |
+| HTML       |          5 |        142 |          0 |          8 |        150 |
+| PostCSS    |          1 |         56 |          0 |         15 |         71 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                                                                          | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                                                             |         12 |        399 |          0 |         48 |        447 |
+| app                                                                                                                                                                           |         12 |        399 |          0 |         48 |        447 |
+| app\logged-in                                                                                                                                                                 |         12 |        399 |          0 |         48 |        447 |
+| app\logged-in\User                                                                                                                                                            |         12 |        399 |          0 |         48 |        447 |
+| app\logged-in\User\food                                                                                                                                                       |         12 |        399 |          0 |         48 |        447 |
+| app\logged-in\User\food (Files)                                                                                                                                               |          1 |          2 |          0 |         -1 |          1 |
+| app\logged-in\User\food\food-days                                                                                                                                             |          3 |        104 |          0 |         21 |        125 |
+| app\logged-in\User\food\food-record-list                                                                                                                                      |          8 |        293 |          0 |         28 |        321 |
+| app\logged-in\User\food\food-record-list (Files)                                                                                                                              |          2 |         33 |          0 |          4 |         37 |
+| app\logged-in\User\food\food-record-list\food-record                                                                                                                          |          6 |        260 |          0 |         24 |        284 |
+| app\logged-in\User\food\food-record-list\food-record (Files)                                                                                                                  |          2 |        234 |          0 |         19 |        253 |
+| app\logged-in\User\food\food-record-list\food-record\food-record-create-dialog                                                                                                |          2 |          7 |          0 |          4 |         11 |
+| app\logged-in\User\food\food-record-list\food-record\food-record-delete-dialog                                                                                                |          2 |         19 |          0 |          1 |         20 |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                                                                      | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-days\food-days.component.css                                                               | PostCSS    |         56 |          0 |         15 |         71 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-days\food-days.component.html                                                              | HTML       |         23 |          0 |          2 |         25 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-days\food-days.component.ts                                                                | TypeScript |         25 |          0 |          4 |         29 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record-list.component.html                                                | HTML       |          4 |          0 |          0 |          4 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record-list.component.ts                                                  | TypeScript |         29 |          0 |          4 |         33 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record\food-record-create-dialog\food-record-create-dialog.component.html | HTML       |         -1 |          0 |          2 |          1 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record\food-record-create-dialog\food-record-create-dialog.component.ts   | TypeScript |          8 |          0 |          2 |         10 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record\food-record-delete-dialog\food-record-delete-dialog.component.html | HTML       |          8 |          0 |          0 |          8 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record\food-record-delete-dialog\food-record-delete-dialog.component.ts   | TypeScript |         11 |          0 |          1 |         12 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record\food-record.component.html                                         | HTML       |        108 |          0 |          4 |        112 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food-record-list\food-record\food-record.component.ts                                           | TypeScript |        126 |          0 |         15 |        141 |
+| c:\Users\Gelu\Desktop\Licenta\Aphrodite\Aphrodite\src\app\logged-in\User\food\food.component.ts                                                                               | TypeScript |          2 |          0 |         -1 |          1 |
+| Total                                                                                                                                                                         |            |        399 |          0 |         48 |        447 |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

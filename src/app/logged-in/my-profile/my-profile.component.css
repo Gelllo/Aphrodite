@@ -1,0 +1,17 @@
+.mat-icon{
+  box-sizing: content-box !important;
+}
+
+.icon-display{
+  font-size:3vw;
+  text-align:center;
+}
+
+#UpdateButton{
+}
+
+#SaveProfileButton{
+  background-color: #77dd77;
+  color:white;
+}
+

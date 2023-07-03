@@ -1,0 +1,26 @@
+<div class="d-flex flex-column" style="overflow-y: scroll; height:70vh;">
+  <div *ngFor="let day of registeredDays" class="d-flex flex card-container">
+      <mat-card class="example-card" [routerLink]="day.date| date:'MM-dd-yyyy'">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image">
+            <div class="d-flex justify-content-center background-color">
+                <i class="bi bi-calendar-check-fill m-auto"></i>
+            </div>
+          </div>
+          <mat-card-title>{{day.date}}</mat-card-title>
+          <mat-card-subtitle>{{username}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        <mat-card-content>
+          <div>
+            <b>Records</b> : {{day.recordsCountPerDay}}
+          </div>
+        </mat-card-content>
+        <mat-card-footer>
+          <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        </mat-card-footer>
+      </mat-card>
+  </div>
+</div>
+
+

@@ -1,0 +1,15 @@
+<mat-card class="w-100">
+  <mat-card-header>
+    <mat-card-title>After <b>{{glucoseRecord.registeredAfter}}</b></mat-card-title>
+    <mat-card-subtitle>{{glucoseRecord.dateRegistered | date:'MM-dd-yyyy'}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-progress-bar mode="query" [color]="color"></mat-progress-bar>
+  <mat-card-content>
+    <p style="text-align: center;">Glucose Level <b>{{glucoseRecord.glucoseLevel}}</b> Mg/dl</p>
+  </mat-card-content>
+  <mat-progress-bar mode="query" [color]="color"></mat-progress-bar>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" class="m-auto" (click)="updateRecord()"><i class="bi bi-brush"></i></button>
+    <button mat-raised-button color="warn" class="m-auto" (click)="deleteRecord()"><i class="bi bi-trash"></i></button>
+  </mat-card-actions>
+</mat-card>

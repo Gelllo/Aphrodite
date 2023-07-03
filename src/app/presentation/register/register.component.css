@@ -1,0 +1,41 @@
+.register-wrapper{
+  width: 25vw;
+  margin: auto;
+}
+
+.mat-icon{
+  box-sizing: content-box !important;
+}
+
+.login-card-text{
+  text-decoration: none;
+  font-family:sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: grey;
+  cursor:pointer;
+}
+
+.internal-register-button{
+  border-radius: 25px;
+  margin: 25px;
+  height: 5vh;
+  background-image:linear-gradient(to right, lightblue,indigo,violet);
+}
+
+.facebook-button{
+  border-radius: 20px;
+}
+
+img{
+  box-shadow: 10px 15px 20px #f0ecec;
+  border-radius: 55px;
+  margin: 1vw;
+  object-fit: contain;
+}
+
+#login-spinner{
+  position: fixed;
+  top: 25%;
+  left: 50%;
+}

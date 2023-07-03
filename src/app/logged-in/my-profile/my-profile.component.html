@@ -1,0 +1,94 @@
+<div class="d-flex w-100 h-100 justify-content-center">
+
+  <div class="d-flex w-100 justify-content-around">
+    <div class="w-50">
+      <mat-card class="example-card">
+        <mat-card-header class="h-25">
+          <div class="d-flex flex-row w-100 h-100">
+
+              <div id="IconAndTitle" class="d-flex flex-column m-auto">
+                <i class="bi bi-person-badge icon-display"></i>
+                <div class="d-flex m-auto">
+                  <b>My Profile</b>
+                </div>
+              </div>
+
+            <div id="UpdateButton" class="position-absolute">
+              <button mat-fab color="primary" (click)="editProfile()">
+                <mat-icon>edit</mat-icon>
+              </button>
+            </div>
+          </div>
+
+        </mat-card-header>
+        <mat-card-content>
+          <form [formGroup]="myProfileForm">
+            <mat-error *ngIf="!myProfileValid">
+              Invalid profile settings
+            </mat-error>
+            <div class="d-flex flex-column">
+              <mat-form-field>
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="First Name" name="firstName" required formControlName="firstName">
+                <mat-icon matPrefix><i class="bi bi-person-heart"></i></mat-icon>
+                <mat-error>
+                  First name can not be empty
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Last Name</mat-label>
+                <input matInput placeholder="Last Name" name="lastName" required formControlName="lastName">
+                <mat-icon matPrefix><i class="bi bi-person-hearts"></i></mat-icon>
+                <mat-error>
+                  Last name can not be empty
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" name="email" required formControlName="email">
+                <mat-icon matPrefix><i class="bi bi-envelope-at"></i></mat-icon>
+                <mat-error>
+                  Please provide a valid email address
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Username</mat-label>
+                <input matInput placeholder="Username" name="username" required formControlName="username">
+                <mat-icon matPrefix><i class="bi bi-person"></i></mat-icon>
+                <mat-error>
+                  Please provide a valid username
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Role</mat-label>
+                <mat-select required formControlName="role">
+
+                  <mat-option *ngFor="let role of Roles" [value]="role" >
+                    {{role}}
+                  </mat-option>
+                </mat-select>
+                <mat-icon matPrefix><i class="bi bi-person-gear"></i></mat-icon>
+                <mat-error>
+                  Please provide a role
+                </mat-error>
+              </mat-form-field>
+            </div>
+          </form>
+        </mat-card-content>
+
+        <mat-card-footer *ngIf="editEnabled && myProfileForm.valid">
+          <div class="d-flex p-3">
+            <button id="SaveProfileButton" mat-fab (click)="saveProfile()">
+              <mat-icon>check_circle_outline</mat-icon>
+            </button>
+          </div>
+        </mat-card-footer>
+      </mat-card>
+    </div>
+
+
+</div>

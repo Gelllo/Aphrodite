@@ -1,0 +1,39 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <button mat-icon-button routerLink="../">
+      <img src="/assets/glucose.png" class="mb-2">
+    </button>
+    <h1>DiaBilly</h1>
+    <span class="menu-spacer"></span>
+    <div class="d-inline-flex w-100">
+      <div *ngIf="role === 'ADMIN'" class="ms-3">
+        <a mat-button routerLink="./myApp" [routerLinkActive]="'isActive'"> <i class="bi bi-app"></i> My App</a>
+      </div>
+      <div *ngIf="role === 'ADMIN'" class="ms-3">
+        <a mat-button routerLink="./users" [routerLinkActive]="'isActive'"> <i class="bi bi-people"></i> Users</a>
+      </div>
+      <div *ngIf="role === 'USER'" class="ms-3">
+        <a mat-button routerLink="./glucose" [routerLinkActive]="'isActive'"> <i class="bi bi-droplet-half"></i> Glucose</a>
+      </div>
+      <div *ngIf="role === 'USER'" class="ms-3">
+        <a mat-button routerLink="./food" [routerLinkActive]="'isActive'"><i class="bi bi-egg-fried"></i> Food</a>
+      </div>
+      <div *ngIf="role === 'USER'" class="ms-3">
+        <a mat-button routerLink="./reports" [routerLinkActive]="'isActive'"><i class="bi bi-file-pdf"></i>My Reports</a>
+      </div>
+      <div *ngIf="role === 'MEDIC'" class="ms-3">
+        <a mat-button routerLink="./myPatients" [routerLinkActive]="'isActive'"><i class="bi bi-activity"></i> My Patients</a>
+      </div>
+      <div *ngIf="(role === 'MEDIC' || role ==='USER')" class="ms-3">
+        <a mat-button routerLink="./mails" [routerLinkActive]="'isActive'"><i class="bi bi-envelope-at-fill"></i> Mail</a>
+      </div>
+      <div class="ms-auto">
+        <button mat-button [matMenuTriggerFor]="menu"> Hi, {{firstName}}</button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="./myProfile">My Profile</button>
+            <button mat-menu-item (click)="signOut()">Sign out</button>
+          </mat-menu>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

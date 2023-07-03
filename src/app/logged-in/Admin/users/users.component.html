@@ -1,0 +1,78 @@
+<div class="d-flex w-100 h-100 justify-content-center align-items-center">
+  <div class="w-75">
+    <div class="example-loading-shade"
+      *ngIf="isLoadingResults || isRateLimitReached">
+      <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+      <div class="example-rate-limit-reached" *ngIf="isRateLimitReached">
+        API rate lime exceeded
+      </div>
+    </div>
+
+    <mat-form-field class="w-100">
+      <mat-label>Filter</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Insert" #input>
+    </mat-form-field>
+
+    <div class="mat-elevation-z8">
+
+      <table mat-table [dataSource]="dataSource" matSort matSortActive="id" matSortDisableClear matSortDirection="desc">
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        <!-- ID Column -->
+        <ng-container matColumnDef="Id">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+          <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="UserID">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> UserID </th>
+          <td mat-cell *matCellDef="let row"> {{row.userID}} </td>
+        </ng-container>
+
+        <!-- Progress Column -->
+        <ng-container matColumnDef="LastName">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> LastName </th>
+          <td mat-cell *matCellDef="let row"> {{row.lastName}} </td>
+        </ng-container>
+
+        <!-- Fruit Column -->
+        <ng-container matColumnDef="FirstName">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> FirstName </th>
+          <td mat-cell *matCellDef="let row"> {{row.firstName}} </td>
+        </ng-container>
+
+        <!-- Fruit Column -->
+        <ng-container matColumnDef="Email">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+          <td mat-cell *matCellDef="let row"> {{row.email}} </td>
+        </ng-container>
+
+        <!-- Fruit Column -->
+        <ng-container matColumnDef="Role">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Role </th>
+          <td mat-cell *matCellDef="let row"> {{row.role}} </td>
+        </ng-container>
+
+        <!-- Fruit Column -->
+        <ng-container matColumnDef="Actions">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header id="ActionsId">Actions</th>
+          <td mat-cell *matCellDef="let row">
+            <div class="d-flex justify-content-around">
+              <button mat-raised-button style="background-color: #77dd77;" (click)="updateUser(row)"> Update </button>
+              <button mat-raised-button style="background-color: #ff6961" (click)="deleteUser(row)"> Delete </button>
+            </div>
+        </td>
+        </ng-container>
+
+
+        <!-- Row shown when there is no matching data. -->
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+        </tr>
+      </table>
+
+      <mat-paginator [length]="resultsLength" [pageSize]="30" aria-label="Select page of error"></mat-paginator>
+    </div>
+  </div>
+</div>
