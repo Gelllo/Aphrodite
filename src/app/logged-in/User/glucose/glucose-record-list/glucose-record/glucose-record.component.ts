@@ -35,7 +35,7 @@ export class GlucoseRecordComponent implements OnInit{
     else if(this.glucoseRecord.glucoseLevel <=160){
       this.color = 'accent';
     }
-    else if(this.glucoseRecord.glucoseLevel <=180){
+    else{
       this.color = 'warn'
     }
   }

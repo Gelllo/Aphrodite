@@ -19,7 +19,7 @@ export class FoodRecordComponent implements OnInit{
   @Input() index: number;
   @Output() deleteEvent = new EventEmitter<number>();
   public editMode = false;
-
+  public mealDate:Date;
   public productsFormControl = new FormControl();
   public recipesFormControl = new FormControl();
 
@@ -36,6 +36,7 @@ export class FoodRecordComponent implements OnInit{
   }
 
   ngOnInit(): void {
+    this.mealDate = new Date(this.meal.dateRegistered as string);
     this.productsFormControl.valueChanges.pipe(
       filter((res:string) => {
         return res !== null && res?.length >= 3

@@ -9,7 +9,7 @@ import { AuthService } from './services/auth.service';
 })
 export class AppComponent implements OnInit, AfterViewInit{
 
-  title = 'Aphrodite';
+  title = 'DiaBilly';
 
   constructor(private themeService: ThemeService, private authService: AuthService){}
 
