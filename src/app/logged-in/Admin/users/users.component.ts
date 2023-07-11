@@ -66,7 +66,7 @@ export class UsersComponent {
           if (data === null) {
             return [];
           }
-          this.resultsLength = data.total_count;
+          this.resultsLength = data.totalCount;
           return data.usersList;
         }),
       )

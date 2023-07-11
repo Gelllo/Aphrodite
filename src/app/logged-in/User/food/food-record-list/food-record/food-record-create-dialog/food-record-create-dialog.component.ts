@@ -102,7 +102,6 @@ export class FoodRecordCreateDialogComponent implements OnInit{
 
   AddFoodToMeal(id:number){
     let extractedFood = this.requestData.find(x=>x.id === id);
-    console.log(extractedFood);
     let nutrients = extractedFood.nutrition.nutrients
       .filter((x:any)=>this.nutrientsTarget.includes(x.name))
       .map((x:any)=>

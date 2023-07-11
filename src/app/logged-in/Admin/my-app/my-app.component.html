@@ -1,4 +1,4 @@
-<div class="d-flex w-100 h-100 justify-content-center align-items-center">
+<div class="d-flex w-100 h-100 justify-content-center align-items-center p-2">
     <div class="w-75">
       <div class="example-loading-shade"
         *ngIf="isLoadingResults || isRateLimitReached">
@@ -10,7 +10,7 @@
 
       <mat-form-field class="w-100">
         <mat-label>Filter</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Insert" #input>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Anubis" #input>
       </mat-form-field>
 
       <div class="mat-elevation-z8">

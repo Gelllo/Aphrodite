@@ -11,18 +11,24 @@ import { AuthService } from '../services/auth.service';
 @Injectable()
 export class CustomHttpInterceptor implements HttpInterceptor {
 
-  constructor(private spinnerService: SpinnerService, private _authService:AuthService) { }
+  constructor( private _authService:AuthService) { }
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
       return next.handle(req)
            .pipe(tap((event: HttpEvent<any>) => {
                   console.log(event);
               }, (error) => {
-                  this.spinnerService.hide();
                   if(error.status == 401)
                   {
-                    this._authService.authenticationState.next(false);
-                    this._authService.DeleteUserInfo();
+                    this._authService.RefreshToken().subscribe(
+                      (x:any)=>{
+                        console.log("REFRESHED");
+                      },
+                      (error:any)=>{
+                        this._authService.authenticationState.next(false);
+                        this._authService.DeleteUserInfo();
+                      }
+                    );
                   }
               }));
   }

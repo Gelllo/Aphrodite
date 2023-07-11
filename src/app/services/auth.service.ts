@@ -19,16 +19,13 @@ export class AuthService {
   constructor(private httpClient: HttpClient, public spinnerService:SpinnerService, private router:Router) {
 
     this.authenticationState.subscribe((state)=>{
-        if(state != null){
-
-        }
         if(state)
         {
           this.router.navigate(['/logged-in'])
-          this.RefreshToken();
-          setInterval(() =>{
-            this.RefreshToken();
-          },840000)
+          // this.RefreshToken();
+          // setInterval(() =>{
+          //   this.RefreshToken();
+          // },840000)
         }
         else{
           this.router.navigate(['/presentation/login'])
@@ -60,10 +57,10 @@ export class AuthService {
     return this.httpClient.post(this.path + "authentication/Logout",JSON.stringify(req), {headers: header, withCredentials:true});
   }
 
-  RefreshToken = async () => {
+  RefreshToken() : Observable<any> {
     let req = {};
     const header = new HttpHeaders().set('Content-type', 'application/json');
-    await this.httpClient.post(this.path + "authentication/refreshToken", req, {headers: header, withCredentials:true}).toPromise();
+    return this.httpClient.post(this.path + "authentication/refreshToken", req, {headers: header, withCredentials:true});
   }
 
   LoginWithGoogle(credentials: string, userExists:boolean): Observable<any> {
